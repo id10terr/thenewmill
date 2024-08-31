@@ -2,18 +2,25 @@
 <html>
     <head>
         <title>The New Mill</title>
-<style>
-body {
-  background-image: url('./img/StarHorizonLogo1280x1024.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed; 
-  background-size: 100% 100%;
-}
-img {
-  width: 100%;
-}
+        <style>
+        body {
+          background-image: url('./img/StarHorizonLogo1280x1024.jpg');
+          background-repeat: no-repeat;
+          background-attachment: fixed; 
+          background-size: 100% 100%;
+        }
+        img {
+          width: 100%;
+        }
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <img src="./img/TheNewMill.png" alt="TheNewMill">
+<h2>The New Mill </h2>
+<picture>
+  <source media="(min-width: 650px)" srcset="img_food.jpg">
+  <source media="(min-width: 465px)" srcset="img_car.jpg">
+  <img src="./img/TheNewMill.png" style="width:auto;">
+</picture>
+
     </body>
 </html>
