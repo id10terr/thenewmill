@@ -1,5 +1,7 @@
 body {
-	background-image: linear-gradient(to bottom right, yellow, gold, cyan);
+	background-image: linear-gradient(to bottom right, rgba(255, 255, 204, 0.80), rgba(50, 200, 255, 0.75) ),
+	url('img/BackgroundBW.jpg');;
+	font-family: Arial;
 	background-repeat: no-repeat;
 	background-attachment: fixed; 
 	background-size: 100% 100%;
@@ -7,8 +9,11 @@ body {
 
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color: #333;
-  overflow: hidden;
+	background-color: #333;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	width: 50%;
 }
 
 /* Style the links inside the navigation bar */
@@ -32,6 +37,13 @@ body {
   background-color: #04AA6D;
   color: white;
 }
+
+/* We need a spacer to place content below the menu */
+.spacer {
+    width: 100%;
+    height: 50px;
+}
+
 .intro { 
 	/* background: #DCDCDC; */
 	text-align: center;
