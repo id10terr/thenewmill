@@ -2,7 +2,7 @@
 <html> 
 <head> 
 	<title>Menu En</title> 
-	<link rel="stylesheet" type="text/css" href="../styles.css" />
+	<link rel="stylesheet" type="text/css" href="styles.css" />
 
 </head> 
 <body>
@@ -40,12 +40,12 @@
 
 		var tempImg = new Image();
 		tempImg.onload = function(){
-			currentImage.src = "images/" + images[0] + ".jpg"
+			currentImage.src = "menu_en/images/" + images[0] + ".jpg"
 			appendImage();
 		}
 
 		var tryLoadImage = function(){
-			tempImg.src = "thumbnails/" + images[i] + ".jpg";
+			tempImg.src = "menu_en/thumbnails/" + images[i] + ".jpg";
 		}
 
 		var appendImage = function(){

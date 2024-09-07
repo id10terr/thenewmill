@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html> 
 <head> 
-	<title>Events</title> 
-	<link rel="stylesheet" type="text/css" href="../styles.css" />
+	<title>Create Image Gallery From The Contents Of A Folder</title> 
+	<link rel="stylesheet" type="text/css" href="styles.css" />
 </head> 
 <body>
 	<div class="intro"> 
 
-		<h2>What's On</h2> 
+		<h2>Gallery</h2> 
 
 		<div id="image-gallery">
 			<img id="current-image" alt = "Image Gallery">
@@ -41,12 +41,12 @@
 
 		var tempImg = new Image();
 		tempImg.onload = function(){
-			currentImage.src = "images/image" + startwith + ".jpg"
+			currentImage.src = "gallery/images/image" + startwith + ".jpg"
 			appendImage();
 		}
 
 		var tryLoadImage = function(){
-			tempImg.src = "thumbnails/image" + pad(i, 4) + ".jpg";
+			tempImg.src = "gallery/thumbnails/image" + pad(i, 4) + ".jpg";
 		}
 
 		var appendImage = function(){
