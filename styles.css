@@ -7,6 +7,11 @@ body {
 	background-size: 100% 100%;
 }
 
+.content {
+  max-width: 500px;
+  margin: auto;
+}
+
 /* Add a black background color to the top navigation */
 .topnav {
 	background-color: #333;
@@ -14,6 +19,8 @@ body {
 	position: fixed;
 	top: 0;
 	width: 50%;
+  max-width: 500px;
+  margin: auto;
 }
 
 /* Style the links inside the navigation bar */
@@ -130,16 +137,14 @@ p {
 
 
 .google-map {
-     padding-bottom: 40%;
-     position: relative;
-     height: 70%;
-     width: 70%;
-align-items: center;
+	margin: auto;
+     height: 80%;
+     width: 80%;
+	padding-bottom: 40%;
+	position: relative;
 }
 
 .google-map iframe {
-     height: 100%;
-     width: 100%;
-     align-items: center;
-     position: absolute;
+
+     position: relative;
 }
