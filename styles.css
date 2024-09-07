@@ -5,6 +5,7 @@ body {
 	background-repeat: no-repeat;
 	background-attachment: fixed; 
 	background-size: 100% 100%;
+	font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 
 /* Add a black background color to the top navigation */
@@ -13,9 +14,9 @@ body {
 	overflow: hidden;
 	position: fixed;
 	top: 0;
-	width: 50%;
+	width: 100%;
  
-  margin: auto;
+   margin: auto;
 }
 
 /* Style the links inside the navigation bar */
@@ -35,10 +36,10 @@ body {
 }
 
 /* Add a color to the active/current link */
-.topnav a.active {
-  background-color: #04AA6D;
+/* .topnav a.active {
+  background-color: #66ACD7;
   color: white;
-}
+} */
 
 /* We need a spacer to place content below the menu */
 .spacer {
@@ -49,7 +50,6 @@ body {
 .intro { 
 	/* background: #DCDCDC; */
 	text-align: center;
-	font-family: Arial;
 }
 
 .grid-container { 
@@ -74,6 +74,7 @@ body {
 #current-image {
 	position: relative;
 	width: 100%;
+	border-radius: 10%;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 } 
 
@@ -98,6 +99,7 @@ body {
 	align-items: center;
 	text-align: center;
 	cursor: pointer;
+	border-radius: 20%;
 }
 
 .thumb:hover {
@@ -122,15 +124,21 @@ body {
   100% { transform: rotate(360deg); }
 }
 
+.opening-hours {
+	margin: auto;
+	 height: 80%;
+	 width: 50%;
+}
 
 .google-map {
 	margin: auto;
      height: 80%;
-     width: 80%;
+     width: 50%;
 	padding-bottom: 40%;
 	position: relative;
 }
 
 .google-map iframe {
      position: relative;
+	 display: block;
 }
