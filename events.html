@@ -35,19 +35,19 @@
 
 		let i = 1;
 		// n is the total number of images or less
-		let n = 11;
+		let n = 3;
 
 		// pick a random image to start from 1 to n
 		let startwith = pad ( ( 1 + Math.floor(Math.random() * n) ), 4 );
 
 		var tempImg = new Image();
 		tempImg.onload = function(){
-			currentImage.src = "images/image" + startwith + ".jpg"
+			currentImage.src = "events/images/image" + startwith + ".jpg"
 			appendImage();
 		}
 
 		var tryLoadImage = function(){
-			tempImg.src = "thumbnails/image" + pad(i, 4) + ".jpg";
+			tempImg.src = "events/thumbnails/image" + pad(i, 4) + ".jpg";
 		}
 
 		var appendImage = function(){
