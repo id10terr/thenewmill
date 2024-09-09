@@ -1,44 +1,56 @@
+/* Define our colour scheme */
+:root {
+    --clr-bg-left:rgba(255, 255, 204, 0.80);
+	--clr-bg-right:rgba(50, 200, 255, 0.75);
+	
+	--clr-nav-bg: #000066;
+	--clr-nav-a: #ffffcc;
+	--clr-nav-hover: #000000;
+	--clr-nav-hover-bg: #99ccff;
+		
+	--clr-spinner: #f3f3f3
+	--clr-spinner-top: #000066
+	
+}
 
 body {
-	background-image: linear-gradient(to bottom right, rgba(255, 255, 204, 0.80), rgba(50, 200, 255, 0.75) ),
-	url('images/BackgroundBW.jpg');;
+	background-image: linear-gradient(to bottom right, var(--clr-bg-left), var(--clr-bg-right) ), url('images/BackgroundBW.jpg');
 	background-repeat: no-repeat;
 	background-attachment: fixed; 
 	background-size: 100% 100%;
 	font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 
-/* Add a black background color to the top navigation */
+/* Add a background color to the top navigation */
 .topnav {
-	background-color: #333;
+	background-color: var(--clr-nav-bg);
 	overflow: hidden;
-	position: fixed;
+	position: relative;
 	top: 0;
 	width: 100%;
- 
-   margin: auto;
+	margin: auto;
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+	float: left;
+	color: var(--clr-nav-a);
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
 }
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #ddd;
-  color: black;
+	background-color: var(--clr-nav-hover-bg);
+	color: var(--clr-nav-hover);
 }
 
 /* Add a color to the active/current link */
 /* .topnav a.active {
-  background-color: #66ACD7;
-  color: white;
+	background-color: var(--clr-nav-active-bg);
+	color: var(--clr-nav-active);
 } */
 
 /* We need a spacer to place content below the menu */
@@ -47,20 +59,18 @@ body {
     height: 50px;
 }
 
-.intro { 
-	/* background: #DCDCDC; */
+.banner { 
 	text-align: center;
+	color: var(--clr-nav-bg);
 }
 
 .grid-container { 
-	/* background: #DCDCDC; */
-
 	text-align: center;
 	margin-left: 20px;
 	margin-right: 20px;
 	margin-top: 20px;
 	margin-bottom: 20px;
-
+	
 	padding-top: 20px;
 	padding-bottom: 18px;
 }
@@ -74,7 +84,7 @@ body {
 #current-image {
 	position: relative;
 	width: 100%;
-	border-radius: 10%;
+	border-radius: 5%;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 } 
 
@@ -99,11 +109,11 @@ body {
 	align-items: center;
 	text-align: center;
 	cursor: pointer;
-	border-radius: 20%;
+	border-radius: 5%;
 }
 
 .thumb:hover {
-  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+	box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2)
 }
 
 #image-thumbs {
@@ -111,34 +121,15 @@ body {
 }
 
 .loading-spinner {
-  border: 5px solid #f3f3f3; /* Light grey */
-  border-top: 5px solid #3498db; /* Blue */
-  border-radius: 100%;
-  width: 50px;
-  height: 50px;
-  animation: spin 1s linear infinite;
+	border: 5px solid #f3f3f3; 
+	border-top: 5px solid #000066;
+	border-radius: 100%;
+	width: 50px;
+	height: 50px;
+	animation: spin 1s linear infinite;
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
-.opening-hours {
-	margin: auto;
-	 height: 80%;
-	 width: 50%;
-}
-
-.google-map {
-	margin: auto;
-     height: 80%;
-     width: 50%;
-	padding-bottom: 40%;
-	position: relative;
-}
-
-.google-map iframe {
-     position: relative;
-	 display: block;
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
 }
